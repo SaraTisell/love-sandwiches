@@ -56,6 +56,9 @@ def validate_data(values):
 
     return True
 
+    """
+    These functions is now combined to def update_worksheet(data, worksheet)
+
 def update_sales_worksheet(data):
     """
     Update sales worksheet, add new row with the list data provided.
@@ -73,8 +76,10 @@ def update_surplus_worksheet(data):
     surplus_worksheet = SHEET.worksheet("surplus")
     surplus_worksheet.append_row(data)
     print("Surplus worksheet updated successfully.\n")
+    """
 
-def uppdate_worksheet(data, worksheet):
+
+def update_worksheet(data, worksheet):
     """
     Recieve a list of integres to be inserted into a woeksheet
     Update the relevant worksheet with the data provided
